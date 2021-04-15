@@ -64,6 +64,30 @@ section.masthead-logistic {
       section.masthead-logistic h1 {
         font-size: 3rem; } }
 
+section.masthead-benefits {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-showcase-2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  section.masthead-benefits .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3; }
+  section.masthead-benefits h1 {
+    font-size: 5rem; }
+  @media (min-width: 768px) {
+    section.masthead-benefits h1 {
+      font-size: 3rem; } }
+
 .showcase .showcase-text {
   padding: 3rem; }
 
