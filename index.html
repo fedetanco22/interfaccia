@@ -32,13 +32,6 @@
 	</head>
 
 	<body>
-		<!-- Navigation -->
-		<!-- <nav class="navbar navbar-light bg-light static-top">
-			<div class="container">
-				<a class="navbar-brand" href="#">Start Bootstrap</a>
-				<a class="btn btn-primary" href="#">Sign In</a>
-			</div>
-		</nav> -->
 
 		<!-- Masthead -->
 		<header class="masthead text-white text-center">
@@ -139,7 +132,7 @@
 
 		<!-- Masthead Logistics-->
 		<section class="masthead-logistic section-logistic text-white text-center">
-			<div class="overlay-logistic"></div>
+			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-9 mx-auto">
@@ -293,16 +286,36 @@
 			</div>
 		</section>
 
-		<!-- Image Showcases Benefits -->
-		<section class="masthead-benefits section-benefits text-white text-center">
-			<div class="overlay-logistic"></div>
+		<!-- Masthead Smart Communities-->
+		<section class="masthead-smart section-logistic text-white text-center">
+			<div class="overlay-smart"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-9 mx-auto">
 						<div class="Hero__Title__Container">
 							<span class="Hero__Span"></span>
 
-							
+							<h1 class="mb-5 text-left">Interfaccia</h1>
+							<h2 class="mb-5 text-left Hero__Titles Hero__Company">
+								Smart Communities para barrios cerrados
+							</h2>
+							<p class="mb-5 text-left Hero__Titles Hero__Description">
+								Somos la primera empresa Argentina dedicada a crear soluciones tecnologicas para comunidades inteligentes con alcance y vision global.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Image Showcases Benefits -->
+		<section class="masthead-benefits section-benefits text-white text-center">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<div class="Hero__Title__Container">
+							<span class="Hero__Span"></span>
 							<h2 class="mb-5 text-left Hero__Titles Hero__Company">
 								Mejorá costos, productividad y rentabilidad de tu compañía.
 							</h2>
@@ -314,85 +327,68 @@
 			</div>
 		</section>
 
-		<!-- Testimonials -->
-		<!-- <section class="testimonials text-center bg-light">
-			<div class="container">
-				<h2 class="mb-5">What people are saying...</h2>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-							<img
-								class="img-fluid rounded-circle mb-3"
-								src="img/testimonials-1.jpg"
-								alt=""
-							/>
-							<h5>Margaret E.</h5>
-							<p class="font-weight-light mb-0">
-								"This is fantastic! Thanks so much guys!"
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-							<img
-								class="img-fluid rounded-circle mb-3"
-								src="img/testimonials-2.jpg"
-								alt=""
-							/>
-							<h5>Fred S.</h5>
-							<p class="font-weight-light mb-0">
-								"Bootstrap is amazing. I've been using it to create lots of
-								super nice landing pages."
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-							<img
-								class="img-fluid rounded-circle mb-3"
-								src="img/testimonials-3.jpg"
-								alt=""
-							/>
-							<h5>Sarah W.</h5>
-							<p class="font-weight-light mb-0">
-								"Thanks so much for making these free resources available to
-								us!"
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
 		<!-- Call to Action -->
 		<section class="call-to-action text-white text-center ">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-9 mx-auto">
-						<h4 class="mb-4">Chapaleufú Emprendimientos</h4>
+					<div class="col-sm-12 col-md-12 col-lg-12 ">
+						<h4 class="mb-4">Interfaccia</h4>
 						<h3 class="mb-4">¿Comenzamos?</h3>
 						<p>Envianos tu consulta y te contestaremos a la brevedad.</p>
 					</div>
-					<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-						<form>
-							<div class="form-row">
-								<div class="col-12 col-md-9 mb-2 mb-md-0">
+					<div class="col-sm-12 col-md-12 col-lg-12 ">
+						<form class="form-start d-flex flex-column align-items-center" action="correo.php" method="POST">
+							
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
+									<input
+										type="text"
+										name="nombre"
+										class="form-input"
+										placeholder="Nombre..."
+									/>
+								</div>
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
+									<input
+										type="text"
+										name="apellido"
+										class="form-input"
+										placeholder="Apellido..."
+									/>
+								</div>
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
 									<input
 										type="email"
-										class="form-control form-control-lg"
+										class="form-input"
 										placeholder="Enter your email..."
 									/>
 								</div>
-								<div class="col-12 col-md-3">
-									<button
-										type="submit"
-										class="btn btn-block btn-lg btn-primary"
-									>
-										Enviar!
-									</button>
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
+									<input
+										type="text"
+										name="telefono"
+										class="form-input"
+										placeholder="Telefono..."
+									/>
 								</div>
-							</div>
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
+									<input
+										type="text"
+										name="empresa"
+										class="form-input"
+										placeholder="Empresa..."
+									/>
+								</div>
+								
+								<div class="col-12 col-md-9 mb-2 mb-md-2">
+									<textarea 
+										cols="10"
+										rows="5"
+										class="form-input form-input-message"
+										placeholder="Enter your email..."
+									></textarea>
+								</div>
+									
 						</form>
 					</div>
 				</div>

@@ -10,63 +10,60 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700; }
 
-header.masthead {
+header.masthead,
+section.masthead-logistic,
+section.masthead-smart {
   position: relative;
   background-color: #343a40;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  header.masthead .overlay,
+  section.masthead-logistic .overlay,
+  section.masthead-smart .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3; }
+  header.masthead h1,
+  section.masthead-logistic h1,
+  section.masthead-smart h1 {
+    font-size: 5rem; }
+  @media (min-width: 768px) {
+    header.masthead,
+    section.masthead-logistic,
+    section.masthead-smart {
+      padding-top: 12rem;
+      padding-bottom: 12rem; }
+      header.masthead h1,
+      section.masthead-logistic h1,
+      section.masthead-smart h1 {
+        font-size: 3rem; } }
+
+header.masthead {
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
-  header.masthead .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3; }
-  header.masthead h1 {
-    font-size: 5rem; }
-  @media (min-width: 768px) {
-    header.masthead {
-      padding-top: 12rem;
-      padding-bottom: 12rem; }
-      header.masthead h1 {
-        font-size: 3rem; } }
+  background-size: cover; }
 
 section.masthead-logistic {
-  position: relative;
-  background-color: #343a40;
   background: url("../img/bg-masthead-logistic.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
-  section.masthead-logistic .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3; }
-  section.masthead-logistic h1 {
-    font-size: 5rem; }
-  @media (min-width: 768px) {
-    section.masthead-logistic {
-      padding-top: 12rem;
-      padding-bottom: 12rem; }
-      section.masthead-logistic h1 {
-        font-size: 3rem; } }
+  background-size: cover; }
+
+section.masthead-smart {
+  background: url("../img/bg-masthead-communities.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 section.masthead-benefits {
-  position: relative;
-  background-color: #343a40;
   background: url("../img/bg-showcase-2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -74,7 +71,7 @@ section.masthead-benefits {
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 4rem; }
-  section.masthead-benefits .overlay {
+  section.masthead-benefits .overlay-smart {
     position: absolute;
     background-color: #212529;
     height: 100%;
@@ -138,6 +135,24 @@ section.masthead-benefits {
     top: 0;
     left: 0;
     opacity: 0.3; }
+
+.form-start {
+  text-align: center; }
+
+.form-input {
+  width: 80%;
+  font-weight: 200;
+  border: solid 1px white;
+  border-radius: 100px;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  color: white; }
+
+.form-input-message {
+  border-radius: 20px;
+  color: white; }
 
 footer.footer {
   padding-top: 4rem;
