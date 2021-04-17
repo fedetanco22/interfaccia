@@ -22,7 +22,7 @@
 }
 .form-input {
 	width: 80%;
-	font-weight: 200;
+	font-weight: 400;
 	border: solid 1px white;
 	border-radius: 100px;
 	background-color: transparent;
@@ -31,7 +31,17 @@
 	width: 75%;
 	color: white;
 }
+
 .form-input-message {
 	border-radius: 20px;
+	color: white;
+}
+
+.form__btn {
+	background-color: transparent;
+	font-family: "Josefin Sans", sans-serif;
+	border: solid 1px white;
+	border-radius: 100px;
+	padding: 10px 20px 10px 20px;
 	color: white;
 }
