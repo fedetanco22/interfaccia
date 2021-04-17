@@ -15,8 +15,8 @@ section.masthead-logistic,
 section.masthead-smart {
   position: relative;
   background-color: #343a40;
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
   header.masthead .overlay,
   section.masthead-logistic .overlay,
   section.masthead-smart .overlay {
@@ -26,21 +26,13 @@ section.masthead-smart {
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.3; }
-  header.masthead h1,
-  section.masthead-logistic h1,
-  section.masthead-smart h1 {
-    font-size: 5rem; }
+    opacity: 0.5; }
   @media (min-width: 768px) {
     header.masthead,
     section.masthead-logistic,
     section.masthead-smart {
-      padding-top: 12rem;
-      padding-bottom: 12rem; }
-      header.masthead h1,
-      section.masthead-logistic h1,
-      section.masthead-smart h1 {
-        font-size: 3rem; } }
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
 
 header.masthead {
   background: url("../img/bg-masthead.jpg") no-repeat center center;
@@ -85,6 +77,42 @@ section.masthead-benefits {
     section.masthead-benefits h1 {
       font-size: 3rem; } }
 
+.Hero__Titles {
+  color: #fff;
+  font-weight: 500;
+  margin: 15px 0 8px; }
+
+.Hero__Company {
+  font-size: 1rem; }
+
+.Hero__Software {
+  font-size: 2rem; }
+
+.Hero__Description {
+  font-size: 1.1rem;
+  font-weight: 300; }
+
+.Hero__Span {
+  background-color: white;
+  width: 40px;
+  height: 5px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+@media screen and (min-width: 776px) {
+  .Hero__Titles {
+    margin-top: 22px;
+    margin-bottom: 8px; }
+  .Hero__Company {
+    font-size: 1.4rem; }
+  .Hero__Software {
+    font-size: 2.4rem; }
+  .Hero__Description {
+    font-size: 1.2rem;
+    font-weight: 300; } }
+
 .showcase .showcase-text {
   padding: 3rem; }
 
@@ -109,6 +137,8 @@ section.masthead-benefits {
         font-size: 2.5rem; }
     .features-icons .features-icons-item:hover .features-icons-icon i {
       font-size: 5rem; }
+    .features-icons .features-icons-item:hover .features-icons-icon .icon-check {
+      font-size: 3rem; }
 
 .testimonials {
   padding-top: 7rem;
