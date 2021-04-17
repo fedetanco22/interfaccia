@@ -1,21 +1,24 @@
 <?php
     if(isset($_POST['enviar'])){//si el botón con el name enviar es pulsado
-        if(!empty($_POST['nombre'])&& !empty($_POST['apellido'])&& !empty($_POST['email'])&& !empty($_POST['interes'])&& !empty($_POST['msg'])){
+        if(!empty($_POST['nombre'])&& !empty($_POST['apellido'])&& !empty($_POST['email'])&& !empty($_POST['telefono'])&& !empty($_POST['empresa'])&& !empty($_POST['msg'])){
         //si no están vacios los inputs name, email y msg 
         //guardo el contenido de cada campo en variables
             $nombre=$_POST['nombre'];
             $apellido=$_POST['apellido'];
             $email=$_POST['email'];
-            $interes=$_POST['interes'];
+            $telefono=$_POST['telefono'];
+            $empresa=$_POST['empresa'];
             $asunto="[Interfaccia] Has recibido un contacto de [".$nombre." ".$apellido."]";//puedo poner un input asunto o crearlo yo directamente  
             $msg="Nombre: ".$nombre."\r\n";
             $msg.="Apellido: ".$apellido."\r\n";
-            $msg.="Interes: ".$interes."\r\n";
+            $msg.="email: ".$email."\r\n";
+            $msg.="telefono: ".$telefono."\r\n";
+            $msg.="empresa: ".$empresa."\r\n";
             $msg.="Mensaje: ".$_POST['msg'];
             $header="From: ".$email."\r\n";//la persona que escribió me dejo su email, entonces el remitente es ese email
             $header.="Reply-To: noreply@example.com"."\r\n";//Le mando un no responder o noreply
             $header.="X-Mailer: PHP/".phpversion();
-            $tuCasilla="quagendaoficial@gmail.com";
+            $tuCasilla="info@interfacciaconnection.com";
             $mail=mail($tuCasilla,$asunto,$msg,$header);//en "tu mail" tenes que colocar tu casilla de email de consultas,es decir, la casilla en la cual vas a recibir las consultas que deja la gente en tu página
             if($mail){// si el email se mando respondo éxito con javascript
                 echo "<script>
