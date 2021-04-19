@@ -29,6 +29,12 @@
 
 		<!-- Custom styles for this template -->
 		<link href="css/landing-page.css" rel="stylesheet" />
+		
+		<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  		<script defer src="./js/app.js"></script>
 	</head>
 
 	<body>
@@ -40,16 +46,14 @@
 				<div class="row">
 					<div class="col-xl-12 pl-0">
 						<div class="Hero__Title__Container">
-							<span class="Hero__Span"></span>
-
-							<h1 class="text-left Hero__Titles Hero__Company">Interfaccia</h1>
-							<h2 class="text-left Hero__Titles Hero__Software">
-								Software Agropecuario y Agrícola
-							</h2>
-							<p class="text-left Hero__Titles Hero__Description">
-								Solución de gestión integral para el sector agropecuario.
-								Administra y gestiona tus producciones agrícolas
-							</p>
+								<span class="Hero__Span features"></span>
+								<h1 class="text-left Hero__Titles Hero__Company features">Interfaccia</h1>
+								<h2 class="text-left Hero__Titles Hero__Software features">
+									Software Agropecuario y Agrícola
+								</h2>
+								<p class="text-left Hero__Titles Hero__Description features">
+									Solución de gestión integral para el sector agropecuario.
+							
 						</div>
 					</div>
 				</div>
@@ -57,10 +61,10 @@
 		</header>
 
 		<!-- Icons Grid Features-->
-		<section class="features-icons bg-light text-center">
+		<section class="features-icons bg-light text-center ">
 			<div class="container">
 				<div class="row  justify-content-center">
-					<div class="col-lg-12 mb-2">
+					<div class="col-lg-12 mb-2" >
 						<h3 class="titulo">Conoce las funcionalidades</h3>
 						<span></span>
 					</div>
@@ -127,23 +131,24 @@
 						</div>
 					</div>
 				</div>
+				<button class="btn btn-dark mt-5"> <a href="#contacto">Comenzar</a> </button>
 			</div>
 		</section>
 
 		<!-- Masthead Logistics-->
-		<section class="masthead-logistic section-logistic text-white text-center">
+		<section class="masthead-logistic section-logistic text-white text-center logistic"" >
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12 pl-0">
-						<div class="Hero__Title__Container">
-							<span class="Hero__Span"></span>
+						<div class="Hero__Title__Container "" >
+							<span class="Hero__Span features-logistic"></span>
 
-							<h1 class=" text-left Hero__Titles Hero__Company">Interfaccia</h1>
-							<h2 class=" text-left Hero__Titles Hero__Software">
+							<h1 class=" text-left Hero__Titles Hero__Company features-logistic">Interfaccia</h1>
+							<h2 class=" text-left Hero__Titles Hero__Software features-logistic">
 								Servicio de logística
 							</h2>
-							<p class=" text-left Hero__Titles Hero__Description">
+							<p class=" text-left Hero__Titles Hero__Description features-logistic">
 								Solución de transporte de productos agrícolas.
 							</p>
 						</div>
@@ -286,9 +291,10 @@
 			</div>
 		</section>
 
+
 		<!-- Masthead Smart Communities-->
 		<section class="masthead-smart section-logistic text-white text-center">
-			<div class="overlay-smart"></div>
+			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12 pl-0">
@@ -310,7 +316,7 @@
 
 		<!-- Image Showcases Benefits -->
 		<section class="masthead-benefits section-benefits text-white text-center">
-			<div class="overlay"></div>
+			<div class="overlay-benefits"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-9 mx-auto">
@@ -319,7 +325,7 @@
 							<h2 class="mb-5 text-center Hero__Titles Hero__Company">
 								Mejorá costos, productividad y rentabilidad de tu compañía.
 							</h2>
-							<button class="btn btn-outline-light">Comenzar</button>
+							<button class="btn btn-outline-light"><a href="#contacto">Comenzar</a></button>
 							
 						</div>
 					</div>
@@ -328,7 +334,7 @@
 		</section>
 
 		<!-- Call to Action -->
-		<section class="call-to-action text-white text-center ">
+		<section id="contacto" class="call-to-action text-white text-center ">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -397,7 +403,7 @@
 									></textarea>
 								</div>
 								<div class="col-12 col-md-9 mb-2 mb-md-2">
-									<input class="form__btn" type="submit" name='enviar' value="Enviar">
+									<input class=" btn form__btn" type="submit" name='enviar' value="Enviar">
 								</div>
 									
 						</form>
@@ -427,5 +433,7 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		
+		
 	</body>
 </html>

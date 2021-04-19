@@ -1,0 +1,10 @@
+.features,
+.features-logistic {
+	opacity: 0;
+	transform: translate(0px, 50px);
+	transition: all 1.5s ease-in-out;
+}
+.features--active {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}

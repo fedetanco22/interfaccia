@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"aos": "^2.3.4",
 		"node-sass": "^5.0.0",
 		"nodemon": "^2.0.7"
 	},

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Josefin Sans", sans-serif; }
 
@@ -9,6 +12,14 @@ h5,
 h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: none; }
 
 header.masthead,
 section.masthead-logistic,
@@ -56,6 +67,7 @@ section.masthead-smart {
   background-size: cover; }
 
 section.masthead-benefits {
+  position: relative;
   background: url("../img/bg-showcase-2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,14 +75,14 @@ section.masthead-benefits {
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 4rem; }
-  section.masthead-benefits .overlay-smart {
+  section.masthead-benefits .overlay-benefits {
     position: absolute;
     background-color: #212529;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.3; }
+    opacity: 0.7; }
   section.masthead-benefits h1 {
     font-size: 5rem; }
   @media (min-width: 768px) {
@@ -197,3 +209,13 @@ section.masthead-benefits {
 footer.footer {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.features,
+.features-logistic {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 1.5s ease-in-out; }
+
+.features--active {
+  opacity: 1;
+  transform: translate(0px, 0px); }

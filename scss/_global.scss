@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@include body-font;
 }
@@ -10,4 +14,14 @@ h5,
 h6 {
 	@include body-font;
 	font-weight: 700;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		background-color: none;
+	}
 }
