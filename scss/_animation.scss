@@ -1,8 +1,32 @@
 .features,
-.features-logistic {
+.features-titulo,
+.features-logistic,
+.cards {
 	opacity: 0;
 	transform: translate(0px, 50px);
 	transition: all 1.5s ease-in-out;
+}
+
+.features-1 {
+	transition-delay: 0.3s;
+}
+.features-2 {
+	transition-delay: 0.6s;
+}
+.features-3 {
+	transition-delay: 0.9s;
+}
+.features-4 {
+	transition-delay: 1s;
+}
+.cards1 {
+	transition-delay: 0.3s;
+}
+.cards-2 {
+	transition-delay: 0.6s;
+}
+.cards-3 {
+	transition-delay: 0.9s;
 }
 .features--active {
 	opacity: 1;
